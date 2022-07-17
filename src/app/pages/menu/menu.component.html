@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let fd of sportData">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{fd.sportImg}}">
+                <h1>{{fd.sportName}}</h1>
+                <p>{{fd.sportCaptain}}</p>
+                <p>MOB. {{fd.mobNumber }}</p>
+                <br/>
+                <a class="buybtn" [routerLink]="['/menu',fd.id]">Explore Team&nbsp;<i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
